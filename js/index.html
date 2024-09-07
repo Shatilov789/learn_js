@@ -7,6 +7,21 @@
   </head>
   <body>
     <h1>My lessons</h1>
-    <script src="lesson22.js"></script>
+    <script src="lesson23.js"></script>
+    <script>
+      let accept = () => {
+        alert("Ви погодились.");
+      };
+      let cancel = () => {
+        alert("Ви скасували виконання.");
+      };
+
+      let ask = (question, yes, no) => {
+        if (confirm(question)) yes();
+        else no();
+      };
+
+      ask("Ви згодні?", accept, cancel);
+    </script>
   </body>
 </html>
